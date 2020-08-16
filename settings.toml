@@ -1,0 +1,19 @@
+[default]
+DEBUG_TB_TEMPLATE_EDITOR_ENABLED = 'False'
+SECRET_KEY = 'Zanao'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
+TITLE = 'Biscoiteria da Angela'
+FLASK_ADMIN_SWATCH = "cerulean"
+
+[debug]
+DEBUG_TB_TEMPLATE_EDITOR_ENABLED = 'True'
+
+EXTENSIONS = [
+    "padaria.ext.toolbar",
+    "padaria.ext.appearence",
+    "padaria.ext.database",
+    "padaria.ext.admin",
+    "padaria.ext.commands",
+    "padaria.blueprints.webapi",
+    "padaria.blueprints.restapi",
+]
